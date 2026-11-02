@@ -4,147 +4,166 @@
 <title>LLA · November 2026 Plan · Board</title><meta name="robots" content="noindex">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#001233;--ink:#0a1628;--deep:#060e1a;--blue:#006EFF;--sky:#7EC8FF;--amber:#E8A75A;--paper:#F6F8FC;--line:#E3E8F2;--mute:#5B6B85;--red:#E5484D;--green:#18A058}
+:root{--navy:#001233;--ink:#0a1628;--deep:#060e1a;--blue:#006EFF;--sky:#7EC8FF;--amber:#E8A75A;--teal:#0A9396;--slate:#7A8AA6;--paper:#F6F8FC;--line:#E3E8F2;--mute:#5B6B85;--green:#18A058;--red:#E5484D}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-snap-type:y mandatory;scroll-behavior:smooth}
-@media(max-width:860px){html{scroll-snap-type:none}}
 body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--deep);-webkit-font-smoothing:antialiased}
-.slide{min-height:100vh;scroll-snap-align:start;display:flex;align-items:center;justify-content:center;padding:48px 28px 56px;position:relative;background:var(--paper)}
+.slide{min-height:100vh;scroll-snap-align:start;display:flex;flex-direction:column;justify-content:center;padding:40px 48px 46px;position:relative;background:var(--paper)}
 .dark{background:radial-gradient(1100px 560px at 85% -10%,#0d3a8a66,transparent 60%),linear-gradient(160deg,var(--navy),var(--deep));color:#fff}
-.wrap{width:100%;max-width:1180px}
+.wrap{width:100%;max-width:1340px;margin:0 auto}
 .k{font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--blue)}.dark .k{color:var(--sky)}
-h2{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(36px,5vw,64px);line-height:1.02;margin:8px 0 26px}
+h2{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(34px,4.4vw,58px);line-height:1.02;margin:6px 0 18px}
 h2 em{font-style:italic;color:var(--blue)}.dark h2 em{color:var(--amber)}
-sup{font-size:9px;font-weight:800;color:#8A97AD;margin-left:2px;letter-spacing:.04em}.dark sup{color:#8EA0BF}
-.note{position:absolute;left:28px;right:28px;bottom:16px;font-size:11px;color:#8A97AD;line-height:1.5}
-.pn{position:absolute;top:18px;right:28px;font-size:12px;font-weight:700;color:#8A97AD;letter-spacing:.1em}
-.g{display:grid;gap:16px}.g4{grid-template-columns:repeat(4,1fr)}.g2{grid-template-columns:1.05fr 1fr}
-@media(max-width:900px){.g4{grid-template-columns:1fr 1fr}.g2{grid-template-columns:1fr}}
-@media(max-width:520px){.g4{grid-template-columns:1fr}}
-.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 8px 24px #0a16280d}
-.dark .card{background:#ffffff0e;border-color:#ffffff22;box-shadow:none}
-.big{font-size:clamp(34px,4vw,52px);font-weight:800;letter-spacing:-.03em;line-height:1}
-.pct{font-size:15px;font-weight:700;margin-top:6px}
-.lab{font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:8px}
-.sw{width:12px;height:12px;border-radius:3px;display:inline-block}
-.res{font-size:14.5px;color:var(--mute);margin-top:12px;line-height:1.45;border-top:1px solid var(--line);padding-top:10px}
-.res b{color:var(--ink)}.bad{color:var(--red)!important}
-.strip{display:flex;height:54px;border-radius:14px;overflow:hidden;margin:0 0 18px}
-.strip div{display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:14px;white-space:nowrap;overflow:hidden}
-.hero{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin-bottom:18px}
-.hero .t{font-family:"Instrument Serif",serif;font-size:clamp(56px,8vw,104px);line-height:.9}
-.hero .s{font-size:17px;color:var(--mute)}.dark .hero .s{color:#B9C6DD}
-/* chart */
-.ch{display:grid;grid-template-columns:230px 1fr;gap:14px 16px;align-items:center}
-@media(max-width:560px){.ch{grid-template-columns:1fr;gap:6px}}
-.ch .n{font-weight:800;font-size:15px}.ch .n small{display:block;font-weight:500;font-size:12.5px;color:#A9B8D2;margin-top:2px}
-.tr{display:flex;flex-direction:column;gap:5px}
-.hb{height:26px;border-radius:7px;display:flex;align-items:center;padding:0 10px;font-size:13px;font-weight:800;white-space:nowrap;min-width:max-content}
-.o{background:#ffffff26;color:#C9D4E8}.nn{background:var(--blue);color:#fff}.am{background:var(--amber);color:#2c1d07}
-.leg{display:flex;gap:18px;font-size:12.5px;color:#A9B8D2;margin:0 0 14px}.leg i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:-1px}
-.cap{display:flex;gap:28px;flex-wrap:wrap;margin-top:22px;padding-top:18px;border-top:1px solid #ffffff22}
-.cap .v{font-size:clamp(30px,3.4vw,44px);font-weight:800;letter-spacing:-.02em}.cap .d{font-size:13px;color:#A9B8D2;margin-top:4px}
+sup{font-size:9px;font-weight:800;color:#8A97AD;margin-left:2px}.dark sup{color:#8EA0BF}
+.pn{position:absolute;top:16px;right:28px;font-size:12px;font-weight:700;color:#8A97AD;letter-spacing:.1em}
+.note{margin-top:14px;font-size:11px;color:#8A97AD;line-height:1.5}
+/* vertical charts */
+.vc{display:flex;align-items:flex-end;justify-content:space-around;gap:3%;height:340px;border-bottom:2px solid var(--line);padding:0 2%;position:relative}
+.dark .vc{border-color:#ffffff30}
+.vc .grid{position:absolute;inset:0;pointer-events:none}
+.vc .grid i{position:absolute;left:0;right:0;border-top:1px dashed #0a162814}.dark .vc .grid i{border-color:#ffffff14}
+.grp{flex:1;display:flex;align-items:flex-end;justify-content:center;gap:10px;height:100%;position:relative;z-index:1}
+.col{flex:1;max-width:150px;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%}
+.col .v{font-size:clamp(20px,2.4vw,34px);font-weight:800;letter-spacing:-.02em;margin-bottom:8px;line-height:1}
+.col .b{width:100%;border-radius:12px 12px 4px 4px;min-height:6px;box-shadow:0 10px 30px #00000014}
+.xl{display:flex;justify-content:space-around;gap:3%;padding:12px 2% 0}
+.xl>div{flex:1;text-align:center}
+.xl .t{font-size:clamp(14px,1.4vw,18px);font-weight:800}
+.xl .s{font-size:clamp(12px,1.1vw,14.5px);color:var(--mute);margin-top:4px;line-height:1.35}.dark .xl .s{color:#B9C6DD}
+.leg{display:flex;gap:22px;font-size:14px;font-weight:600;margin-bottom:12px}.leg i{display:inline-block;width:14px;height:14px;border-radius:4px;margin-right:8px;vertical-align:-2px}
+.oct{background:#ffffff38}.oct2{color:#C9D4E8}
+.nov{background:linear-gradient(180deg,#3d92ff,var(--blue))}.inf{background:linear-gradient(180deg,#f3c286,var(--amber))}
+.chips{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:18px}
+.chip{background:#ffffff0f;border:1px solid #ffffff22;border-radius:14px;padding:12px 14px}
+.chip b{display:block;font-size:clamp(17px,1.6vw,22px);font-weight:800;color:#fff;margin-bottom:3px}
+.chip span{font-size:13px;color:#B9C6DD;line-height:1.35;display:block}
 /* slide 3 */
-.offer{background:linear-gradient(150deg,var(--navy),#0b2a66);color:#fff;border-radius:22px;padding:28px}
-.price{font-family:"Instrument Serif",serif;font-size:clamp(80px,10vw,128px);line-height:.85;color:var(--amber)}
-.ul{list-style:none;margin-top:18px;display:flex;flex-direction:column;gap:10px}
-.ul li{padding-left:26px;position:relative;font-size:16.5px;line-height:1.35}
-.ul li:before{content:"✓";position:absolute;left:0;color:var(--amber);font-weight:800}
-.tg{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.tg .card{padding:16px 18px}.tg .big{font-size:clamp(30px,3.2vw,42px)}
-.tg .d{font-size:13.5px;color:var(--mute);margin-top:6px;line-height:1.35}
-.rule{margin-top:12px;background:#fff;border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:14px;padding:14px 16px;font-size:15px;line-height:1.45}
+.pg{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.p{background:#fff;border:1px solid var(--line);border-top:6px solid var(--blue);border-radius:16px;padding:16px 16px 14px;box-shadow:0 8px 24px #0a16280d;display:flex;flex-direction:column}
+.p .h{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.p .h b{font-size:16px;font-weight:800}.p .h span{font-size:12px;font-weight:800;color:var(--mute);white-space:nowrap}
+.p .m{font-size:26px;font-weight:800;letter-spacing:-.02em;margin:6px 0 8px}
+.p .m small{font-size:14px;font-weight:700;color:var(--mute);margin-left:6px}
+.p ul{list-style:none;display:flex;flex-direction:column;gap:6px;flex:1}
+.p li{font-size:14.5px;line-height:1.38;padding-left:14px;position:relative}
+.p li:before{content:"";position:absolute;left:0;top:.55em;width:6px;height:6px;border-radius:50%;background:currentColor;opacity:.45}
+.p .kpi{margin-top:10px;background:var(--paper);border-radius:10px;padding:8px 10px;font-size:13.5px;line-height:1.35}
+.p .kpi b{color:var(--blue)}
+.bot{display:grid;grid-template-columns:1fr 1.25fr;gap:14px;margin-top:14px}
+.offer{background:linear-gradient(150deg,var(--navy),#0b2a66);color:#fff;border-radius:16px;padding:14px 18px;display:flex;gap:18px;align-items:center}
+.offer .pr{font-family:"Instrument Serif",serif;font-size:66px;line-height:.85;color:var(--amber)}
+.offer .d{font-size:14.5px;line-height:1.45;color:#DCE5F5}
+.tgt{background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 16px}
+.tr{display:flex;gap:10px;flex-wrap:wrap}
+.tr div{flex:1;min-width:92px}.tr b{display:block;font-size:22px;font-weight:800;letter-spacing:-.02em;color:var(--blue)}.tr span{font-size:12px;color:var(--mute)}
+.rule{margin-top:8px;font-size:13.5px;border-top:1px solid var(--line);padding-top:8px}
 .ok{color:var(--green);font-weight:800}.no{color:var(--red);font-weight:800}
-@media(max-width:600px){.strip .sm{font-size:0}}
-@media(max-width:860px){.slide{flex-direction:column;padding-bottom:22px}.note{position:static;margin-top:18px}}
+@media(max-width:1100px){.pg{grid-template-columns:1fr 1fr}.chips{grid-template-columns:repeat(3,1fr)}.bot{grid-template-columns:1fr}}
+@media(max-width:860px){html{scroll-snap-type:none}.slide{padding:40px 16px 26px;justify-content:flex-start}.vc{height:260px;gap:2%}.grp{gap:5px}.col .b{border-radius:8px 8px 3px 3px}}
+@media(max-width:600px){.pg{grid-template-columns:1fr}.chips{grid-template-columns:1fr 1fr}.leg{font-size:12.5px;gap:14px}.offer .pr{font-size:52px}}
+#s1 .vc{height:420px}
+@media(max-width:860px){#s1 .vc{height:280px}.col .v{font-size:17px}.vc{padding:0 1%}}
 </style></head><body>
 
-<!-- 1 WHERE WE ARE -->
+<!-- 1 -->
 <section class="slide" id="s1"><div class="wrap">
 <div class="pn">1 / 3</div>
 <div class="k">Longevity Life Academy · Where we are · October 2026</div>
 <h2>October: <em>where our budget went.</em></h2>
-<div class="strip">
- <div style="width:83%;background:#7A8AA6">Masterclass 83%</div>
- <div class="sm" style="width:7%;background:var(--blue)">7%</div>
- <div class="sm" style="width:4%;background:#0A9396">4%</div>
- <div class="sm" style="width:6%;background:#B8C1D1;color:#33405a">6%</div>
+<div class="vc">
+ <div class="grid"><i style="top:25%"></i><i style="top:50%"></i><i style="top:75%"></i></div>
+ <div class="grp"><div class="col"><div class="v" style="color:var(--slate)">83%</div><div class="b" style="height:83%;background:linear-gradient(180deg,#9aa8c0,var(--slate))"></div></div></div>
+ <div class="grp"><div class="col"><div class="v" style="color:var(--blue)">7%</div><div class="b" style="height:7%;background:linear-gradient(180deg,#3d92ff,var(--blue))"></div></div></div>
+ <div class="grp"><div class="col"><div class="v" style="color:var(--teal)">4%</div><div class="b" style="height:4%;background:linear-gradient(180deg,#25b5b8,var(--teal))"></div></div></div>
+ <div class="grp"><div class="col"><div class="v" style="color:#8a95a8">6%<sup>E</sup></div><div class="b" style="height:6%;background:linear-gradient(180deg,#cfd6e2,#AEB8C9)"></div></div></div>
 </div>
-<div class="g g4">
- <div class="card"><div class="lab"><span class="sw" style="background:#7A8AA6"></span>Masterclass</div>
-  <div class="big">83%<sup>V</sup></div><div class="pct">of the budget</div>
-  <div class="res"><b>195 seats</b> sold for Julie’s live sessions<sup>V</sup></div></div>
- <div class="card"><div class="lab"><span class="sw" style="background:var(--blue)"></span>Blueprint e-com</div>
-  <div class="big">7%<sup>V</sup></div><div class="pct">of the budget</div>
-  <div class="res">Online funnel <b>tested at small scale</b>; offer now refined</div></div>
- <div class="card"><div class="lab"><span class="sw" style="background:#0A9396"></span>LLA leads</div>
-  <div class="big">4%<sup>V</sup></div><div class="pct">of the budget</div>
-  <div class="res"><b>~10 leads/day</b> to our sales rep (Oct 1–21)<sup>V</sup></div></div>
- <div class="card"><div class="lab"><span class="sw" style="background:#B8C1D1"></span>OpenCEX leads</div>
-  <div class="big">6%<sup>E</sup></div><div class="pct">of the budget</div>
-  <div class="res"><b>~27 leads/day</b> for OpenCEX (Oct 22–31)<sup>V</sup></div></div>
+<div class="xl">
+ <div><div class="t">Masterclass</div><div class="s">195 seats sold for Julie’s live sessions<sup>V</sup></div></div>
+ <div><div class="t">Blueprint e-commerce</div><div class="s">Online funnel tested at small scale; offer now refined</div></div>
+ <div><div class="t">LLA leads</div><div class="s">~10 leads/day to our sales rep (Oct 1–21)<sup>V</sup></div></div>
+ <div><div class="t">OpenCEX leads</div><div class="s">~27 leads/day for OpenCEX (Oct 22–31)<sup>V</sup></div></div>
 </div>
-<p style="margin-top:20px;font-size:18px;font-weight:600">Most of October supported the masterclass. November rebalances toward the Blueprint, the course we sell.</p>
-</div>
-<div class="note">V = VERIFIED, Meta ad account data for Oct 1–31, pulled 2 Nov, 13:10 Israel time · E = ESTIMATE: the one leads campaign is split by date (Oct 1–21 LLA, Oct 22–31 OpenCEX). Shares are rounded to whole percentages.</div>
-</section>
+<p style="margin-top:22px;font-size:clamp(16px,1.5vw,20px);font-weight:600;text-align:center">Most of October supported the masterclass. November rebalances toward the Blueprint, the course we sell.</p>
+<div class="note">Share of October Meta ad budget per bucket. V = VERIFIED, Meta data Oct 1–31, pulled 2 Nov, 13:10 Israel time · E = ESTIMATE: the one leads campaign is split by date (Oct 1–21 LLA, Oct 22–31 OpenCEX). Rounded to whole percentages.</div>
+</div></section>
 
-<!-- 2 SHIFT -->
+<!-- 2 -->
 <section class="slide dark" id="s2"><div class="wrap">
 <div class="pn">2 / 3</div>
-<div class="k">November plan · share of budget, October → November</div>
+<div class="k">November shift · share of budget, October → November</div>
 <h2>November: <em>rebalancing toward the Blueprint.</em></h2>
-<div class="leg"><span><i style="background:#ffffff40"></i>October share<sup>V</sup></span><span><i style="background:var(--blue)"></i>November share<sup>E</sup></span></div>
-<div class="ch">
- <div class="n">1 · Blueprint e-com · $24.1K<small>The main engine: online sales</small></div>
- <div class="tr"><div class="hb o" style="width:7%">7%</div><div class="hb nn" style="width:44%">44%</div></div>
- <div class="n">2 · Leads · $10.9K<small>40/weekday at $13 to our sales rep</small></div>
- <div class="tr"><div class="hb o" style="width:10%">10% (incl. OpenCEX)</div><div class="hb nn" style="width:20%">20%</div></div>
- <div class="n">3 · Masterclass · $15K<small>Julie live Nov 14, feeds the Blueprint</small></div>
- <div class="tr"><div class="hb o" style="width:83%">83%</div><div class="hb nn" style="width:27%">27%</div></div>
- <div class="n">4 · Influencers · $5K<small>New · 70% Blueprint · 30% Masterclass</small></div>
- <div class="tr"><div class="hb o" style="width:1%;padding:0 6px">0%</div><div class="hb am" style="width:9%">9% → $3.5K / $1.5K</div></div>
+<div class="leg"><span><i class="oct"></i>October share<sup>V</sup></span><span><i class="nov"></i>November share<sup>E</sup></span><span><i class="inf"></i>New pillar</span></div>
+<div class="vc">
+ <div class="grid"><i style="top:25%"></i><i style="top:50%"></i><i style="top:75%"></i></div>
+ <div class="grp"><div class="col"><div class="v oct2">7%</div><div class="b oct" style="height:7%"></div></div><div class="col"><div class="v" style="color:#6fb0ff">44%</div><div class="b nov" style="height:44%"></div></div></div>
+ <div class="grp"><div class="col"><div class="v oct2">10%</div><div class="b oct" style="height:10%"></div></div><div class="col"><div class="v" style="color:#6fb0ff">20%</div><div class="b nov" style="height:20%"></div></div></div>
+ <div class="grp"><div class="col"><div class="v oct2">83%</div><div class="b oct" style="height:83%"></div></div><div class="col"><div class="v" style="color:#6fb0ff">27%</div><div class="b nov" style="height:27%"></div></div></div>
+ <div class="grp"><div class="col"><div class="v oct2">0%</div><div class="b oct" style="height:1%"></div></div><div class="col"><div class="v" style="color:var(--amber)">9%</div><div class="b inf" style="height:9%"></div></div></div>
 </div>
-<div class="cap">
- <div><div class="v" style="color:var(--amber)">$55K</div><div class="d">November cap, never exceeded<sup>U</sup> · our normal July/August budget<sup>U</sup></div></div>
- <div><div class="v">50%</div><div class="d">of November goes to the Blueprint<sup>E</sup> (incl. influencers)</div></div>
- <div><div class="v">4</div><div class="d">pillars, reviewed every week</div></div>
+<div class="xl">
+ <div><div class="t">1 · Blueprint e-com</div><div class="s">$24.1K in November</div></div>
+ <div><div class="t">2 · Leads</div><div class="s">$10.9K (Oct incl. OpenCEX)</div></div>
+ <div><div class="t">3 · Masterclass</div><div class="s">$15K in November</div></div>
+ <div><div class="t">4 · Influencers</div><div class="s">$5K: 70% Blueprint / 30% Masterclass</div></div>
 </div>
+<div class="chips">
+ <div class="chip"><b>30 sales · $30K</b><span>November goal<sup>U</sup></span></div>
+ <div class="chip"><b style="color:var(--amber)">$55K cap</b><span>Never exceeded; our normal July/August budget<sup>U</sup></span></div>
+ <div class="chip"><b>OpenCEX ends</b><span>Lead budget now serves LLA sales only</span></div>
+ <div class="chip"><b>Weekly review</b><span>Scale what hits target, cut what doesn’t</span></div>
+ <div class="chip"><b>Step one</b><span>Prove a repeatable path to paying students</span></div>
 </div>
-<div class="note" style="color:#8EA0BF">V = VERIFIED (Meta, October shares) · U = USER-REPORTED (Omri) · E = ESTIMATE / plan. Leads = 21 weekdays (Nov 2–30, no Sat/Sun) × 40 × $13 = $10,920. Blueprint = $55,000 − $10,920 − $15,000 − $5,000 = $24,080. Total exactly $55,000. OpenCEX lead buying ends.</div>
-</section>
+<div class="note" style="color:#8EA0BF">V = VERIFIED (Meta, October shares) · U = USER-REPORTED (Omri) · E = ESTIMATE / plan. Leads = 21 weekdays (Nov 2–30) × 40 × $13 = $10,920 · Blueprint = $55,000 − $10,920 − $15,000 − $5,000 = $24,080 · Total exactly $55,000.</div>
+</div></section>
 
-<!-- 3 OFFER + TARGETS -->
+<!-- 3 -->
 <section class="slide" id="s3"><div class="wrap">
 <div class="pn">3 / 3</div>
-<div class="k">The offer + the targets · November 2026</div>
-<h2>Easier to say yes. <em>Measured every week.</em></h2>
-<div class="g g2">
- <div class="offer">
-  <div class="k" style="color:var(--sky)">The Longevity Blueprint · month one</div>
-  <div style="display:flex;align-items:flex-end;gap:14px;margin-top:10px"><div class="price">$79</div><div style="font-size:16px;color:#B9C6DD;padding-bottom:10px">instead of $179<sup>V</sup><br>~56% off<sup>U</sup></div></div>
-  <ul class="ul">
-   <li>Your full Longevity Blueprint</li>
-   <li>Free VIP access to Julie live, Nov 14</li>
-   <li>$100 back toward your next course</li>
-   <li>14-day refund · no obligation</li>
+<div class="k">November plan · pillar by pillar</div>
+<h2>The plan, <em>explained.</em></h2>
+<div class="pg">
+ <div class="p" style="border-top-color:var(--blue)"><div class="h"><b>1 · Blueprint e-commerce</b><span>#1 pillar</span></div>
+  <div class="m">$24.1K<small>44%</small></div>
+  <ul>
+   <li>Refined offer: <b>$79 month one</b> (56% off $179<sup>V</sup>), no obligation, 14-day refund.</li>
+   <li>Includes the full Longevity Blueprint, free VIP access to Julie on Nov 14, $100 back toward the next course, and all normal benefits.</li>
+   <li>Why #1: it is the course we sell, and the sale closes online end to end, with no rep. Ads and landing page lead with the $79 offer.</li>
   </ul>
-  <div style="margin-top:22px;padding-top:14px;border-top:1px solid #ffffff26;font-size:14px;color:#B9C6DD">Next classes start Mon Nov 23 and Wed Nov 25<sup>V</sup></div>
- </div>
- <div>
-  <div class="tg">
-   <div class="card"><div class="big" style="color:var(--blue)">30</div><div class="d">sales in November<sup>U</sup></div></div>
-   <div class="card"><div class="big" style="color:var(--blue)">$30K</div><div class="d">revenue<sup>U</sup></div></div>
-   <div class="card"><div class="big">~4<span style="font-size:.5em;color:var(--mute)">/week</span></div><div class="d">Blueprint online sales<sup>U</sup></div></div>
-   <div class="card"><div class="big">40<span style="font-size:.5em;color:var(--mute)">/weekday</span></div><div class="d">leads at $13 to our sales rep<sup>U</sup></div></div>
-   <div class="card" style="grid-column:1/-1"><div class="big" style="font-size:clamp(26px,2.6vw,34px)">Sat Nov 14 · Julie live</div><div class="d">Masterclass seats, then Blueprint upgrades in the room (20:00 Israel time)<sup>V</sup></div></div>
-  </div>
-  <div class="rule"><b>Weekly rule:</b> <span class="ok">Scale</span> a pillar on target at ≤$1,500 per sale · <span class="no">Kill</span> it if ≤1 sale after $5K in 7 days<sup>E</sup></div>
+  <div class="kpi"><b>KPI:</b> ~4 full online sales a week<sup>U</sup></div></div>
+ <div class="p" style="border-top-color:var(--teal)"><div class="h"><b>2 · Leads</b><span>#2 pillar</span></div>
+  <div class="m">$10.9K<small>20%</small></div>
+  <ul>
+   <li><b>40 leads a weekday at ~$13</b>, about 200 a week, all to our own sales rep.</li>
+   <li>This week the rep finishes the upgrade cycle of current sign-ups, to prove lead-to-sale conversion.</li>
+   <li>The $79 offer is the closing tool on every call.</li>
+  </ul>
+  <div class="kpi"><b>KPI:</b> leads a day · cost per lead · lead → sale</div></div>
+ <div class="p" style="border-top-color:var(--slate)"><div class="h"><b>3 · Masterclass</b><span>#3 pillar</span></div>
+  <div class="m">$15K<small>27%</small></div>
+  <ul>
+   <li><b>Julie live, Sat Nov 14, 20:00 Israel time</b><sup>V</sup>. $49 Standard, $79 VIP<sup>V</sup>.</li>
+   <li>Fills the room, then feeds the Blueprint: VIP access and an upgrade offer during the session.</li>
+   <li>Ads focus on warm audiences and past buyers’ lookalikes.</li>
+  </ul>
+  <div class="kpi"><b>KPI:</b> seats sold · attendee → Blueprint upgrades</div></div>
+ <div class="p" style="border-top-color:var(--amber)"><div class="h"><b>4 · Influencers</b><span>New pillar</span></div>
+  <div class="m">$5K<small>9%</small></div>
+  <ul>
+   <li>Replaces the OpenCEX lead budget, which is ending.</li>
+   <li>Trusted longevity creators warm up our audience before our ads reach them.</li>
+   <li><b>70% primes the Blueprint ($3.5K), 30% the Masterclass ($1.5K).</b></li>
+  </ul>
+  <div class="kpi"><b>KPI:</b> sales per creator code / link</div></div>
+</div>
+<div class="bot">
+ <div class="offer"><div class="pr">$79</div><div class="d"><b style="color:#fff">Blueprint, month one</b><br>Full Blueprint · free VIP Julie Nov 14 · $100 back toward next course · 14-day refund · no obligation</div></div>
+ <div class="tgt">
+  <div class="tr"><div><b>30</b><span>sales<sup>U</sup></span></div><div><b>$30K</b><span>revenue<sup>U</sup></span></div><div><b>~4/wk</b><span>Blueprint online<sup>U</sup></span></div><div><b>40/day</b><span>leads, weekdays<sup>U</sup></span></div><div><b>Nov 14</b><span>Julie live</span></div></div>
+  <div class="rule"><b>Weekly rule:</b> <span class="ok">Scale</span> a pillar on target at ≤$1,500 per sale · <span class="no">Kill</span> if ≤1 sale after $5K in 7 days<sup>E</sup></div>
  </div>
 </div>
-</div>
-<div class="note">V = VERIFIED on the live checkout and masterclass page, 2 Nov · U = USER-REPORTED (Omri) · E = ESTIMATE / proposal. The new offer website will be shared by Omri.</div>
-</section>
+<div class="note">V = VERIFIED on the live checkout and masterclass page, 2 Nov · U = USER-REPORTED (Omri) · E = ESTIMATE / plan.</div>
+</div></section>
 
 <script>
 const S=[...document.querySelectorAll('.slide')];
