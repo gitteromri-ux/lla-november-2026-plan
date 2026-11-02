@@ -2,94 +2,124 @@
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">
-<meta name="build" content="1793628974">
+<meta name="build" content="1793630153">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Longevity Life Academy · November Plan</title><meta name="robots" content="noindex">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bp:#1450E0;--ld:#16A34A;--mc:#A21CAF;--in:#F07A1A;--ink:#0B1530;--mute:#5E6B82}
+:root{--bp:#2F5BD3;--ld:#2F8F66;--in:#D9822B;--mc:#8B4FB0;--ink:#0E1A2B;--mute:#6B7689;--line:#E4E8EE}
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%;overflow:hidden;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased}
+html,body{height:100%;overflow:hidden;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased;font-feature-settings:"tnum" 1}
 #t{display:flex;width:100vw;height:100vh;height:100dvh;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain}
 #t::-webkit-scrollbar{display:none}
-.s{flex:0 0 100vw;width:100vw;height:100%;scroll-snap-align:start;scroll-snap-stop:always;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding:3.5vh 20px 7vh}
-.w{width:100%;max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:1.6vh}
-h1{font-size:min(4.6vh,9vw,52px);font-weight:900;letter-spacing:-.03em;line-height:1.05}
-.ch{display:flex;align-items:flex-end;gap:10px;height:30vh;border-bottom:3px solid #DCE1EA}
+.s{flex:0 0 100vw;width:100vw;height:100%;scroll-snap-align:start;scroll-snap-stop:always;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding:4vh 28px 8vh}
+.w{width:100%;max-width:760px;margin:0 auto;display:flex;flex-direction:column}
+.eb{font-size:min(1.7vh,3.2vw,14px);font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+h1{font-size:min(4.2vh,8.2vw,46px);font-weight:700;letter-spacing:-.025em;line-height:1.1;margin-top:1vh}
+.hr{height:1px;background:var(--line);margin:2.6vh 0}
+.ch{display:flex;align-items:flex-end;gap:14px;height:26vh;margin-top:3.5vh}
 .c{flex:1;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center}
-.c b{font-size:min(3.6vh,7vw,40px);font-weight:900;margin-bottom:.6vh}
-.c i{width:100%;border-radius:10px 10px 3px 3px;min-height:6px}
-.xl{display:flex;gap:10px}.xl div{flex:1;text-align:center;font-size:min(2vh,3.7vw,20px);font-weight:800}
-.xl small{display:block;font-size:min(3vh,5.6vw,32px);font-weight:900;color:var(--ink)}
-.note{text-align:center;font-size:min(2.1vh,4.1vw,20px);font-weight:700;color:var(--mute)}
-.sp{display:flex;gap:10px}.sp div{flex:1;color:#fff;border-radius:16px;padding:1.4vh 14px}
-.sp b{display:block;font-size:min(6.5vh,13vw,72px);font-weight:900;line-height:1;letter-spacing:-.03em}.sp span{font-size:min(2.2vh,4.2vw,22px);font-weight:800}
-.tag{align-self:flex-start;color:#fff;font-size:min(2.2vh,4.2vw,20px);font-weight:900;padding:.6vh 14px;border-radius:999px}
-.big{font-size:min(16vh,30vw,170px);font-weight:900;letter-spacing:-.05em;line-height:.95}
-.lbl{font-size:min(2.6vh,5vw,26px);font-weight:800;margin-top:-1vh}
-.ln{display:flex;gap:10px}.ln div{flex:1;border-radius:16px;padding:1.2vh 14px;background:color-mix(in srgb,var(--c) 10%,#fff);border-left:8px solid var(--c)}
-.ln b{display:block;font-size:min(5.5vh,10vw,56px);font-weight:900;color:var(--c);line-height:1}.ln span{font-size:min(2vh,3.9vw,20px);font-weight:800}
-.why{font-size:min(2.6vh,4.9vw,26px);font-weight:700;line-height:1.3}.why em{font-style:normal;color:var(--mute);font-size:.8em;display:block}
-.cap{font-size:min(2.3vh,4.4vw,22px);font-weight:800;color:var(--mute)}
-.ac{display:flex;flex-direction:column;gap:.9vh}.ac div{border-left:8px solid var(--c);padding:.4vh 12px;font-size:min(2.3vh,4.3vw,22px);font-weight:600;line-height:1.25}.ac b{color:var(--c);font-weight:900}
-#nav{position:fixed;left:0;right:0;bottom:2vh;display:flex;justify-content:center;align-items:center;gap:14px}
-.d{width:10px;height:10px;border-radius:50%;background:#CBD2DE;border:0}.d.on{background:var(--ink);width:26px;border-radius:6px}
-.ar{position:fixed;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;border:0;background:var(--ink);color:#fff;font-size:26px;font-weight:900;cursor:pointer;opacity:.85}
-#pv{left:18px}#nx{right:18px}
+.c b{font-size:min(2.6vh,5vw,26px);font-weight:700;margin-bottom:.8vh;letter-spacing:-.01em}
+.c i{width:64%;border-radius:10px 10px 3px 3px;min-height:5px}
+.base{height:1px;background:var(--line)}
+.xl{display:flex;gap:14px;margin-top:1.4vh}.xl div{flex:1;text-align:center;font-size:min(1.7vh,3.3vw,15px);font-weight:600;color:var(--mute)}
+.xl small{display:block;font-size:min(2.4vh,4.8vw,24px);font-weight:700;color:var(--ink);margin-top:.3vh}
+.fn{font-size:min(1.7vh,3.3vw,15px);color:var(--mute);margin-top:1.6vh;text-align:center}
+.sb{display:flex;height:8px;border-radius:99px;overflow:hidden;margin-bottom:1.6vh}
+.sl{display:flex;justify-content:space-between}
+.sl div:last-child{text-align:right}
+.sl b{display:block;font-size:min(5.4vh,10.5vw,58px);font-weight:700;letter-spacing:-.03em;line-height:1}
+.sl span{font-size:min(1.8vh,3.5vw,16px);font-weight:500;color:var(--mute)}
+.tot{margin-top:2vh;font-size:min(2vh,3.9vw,18px);font-weight:600}
+.big{font-size:min(17vh,33vw,180px);font-weight:700;letter-spacing:-.055em;line-height:.9;margin-top:3vh}
+.u{font-size:min(2.1vh,4.1vw,19px);font-weight:500;color:var(--mute);margin-top:1vh}
+.tw{display:flex;gap:28px}.tw div{flex:1}
+.tw b{display:block;font-size:min(4.6vh,9vw,48px);font-weight:700;letter-spacing:-.03em;line-height:1}
+.tw span{font-size:min(1.8vh,3.5vw,16px);color:var(--mute);font-weight:500}
+.rl{font-size:min(1.5vh,2.9vw,12px);font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-bottom:.8vh}
+.rt{font-size:min(2.3vh,4.4vw,21px);font-weight:500;line-height:1.4}
+.cap{margin-top:2.2vh;font-size:min(1.8vh,3.5vw,16px);color:var(--mute)}.cap b{color:var(--ink);font-weight:600}
+.lv{margin-top:2.4vh}.lv div{display:flex;gap:14px;padding:1.3vh 0;border-top:1px solid var(--line)}.lv div:first-child{border-top:0}
+.lv i{flex:0 0 10px;height:10px;border-radius:50%;background:var(--c);margin-top:.55em}
+.lv p{font-size:min(2vh,3.9vw,18px);line-height:1.35;color:var(--mute)}.lv p b{display:block;color:var(--ink);font-weight:600;font-size:1.05em}
+#nav{position:fixed;left:0;right:0;bottom:3vh;display:flex;justify-content:center;gap:8px}
+.d{width:6px;height:6px;border-radius:50%;background:#CDD3DC;border:0;padding:0;transition:all .25s}.d.on{background:var(--ink);width:20px;border-radius:3px}
+.ar{position:fixed;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:22px;cursor:pointer}
+#pv{left:24px}#nx{right:24px}
 @media(hover:none),(max-width:700px){.ar{display:none}}
 </style></head><body>
 <div id="t">
 <section class="s"><div class="w">
-<h1>November: where the money goes</h1>
+<div class="eb">LLA · November 2026</div>
+<h1>November investment allocation</h1>
 <div class="ch">
 <div class="c"><b style="color:var(--bp)">71%</b><i style="height:71%;background:var(--bp)"></i></div>
 <div class="c"><b style="color:var(--ld)">17%</b><i style="height:17%;background:var(--ld)"></i></div>
 <div class="c"><b style="color:var(--in)">12%</b><i style="height:12%;background:var(--in)"></i></div>
 <div class="c"><b style="color:var(--mc)">0%</b><i style="height:1%;background:var(--mc)"></i></div>
+</div><div class="base"></div>
+<div class="xl"><div>Blueprint<small>$28.3K</small></div><div>Leads<small>$6.7K</small></div><div>Influencers<small>$5K</small></div><div>Masterclass<small>$0</small></div></div>
+<div class="fn">Allocation across Blueprint, leads and influencers adjusts to performance.</div>
+<div class="hr"></div>
+<div class="sb"><i style="width:65%;background:var(--bp)"></i><i style="width:35%;background:var(--ld)"></i></div>
+<div class="sl"><div><b style="color:var(--bp)">65%</b><span>E-commerce + organic</span></div><div><b style="color:var(--ld)">35%</b><span>Call center</span></div></div>
+<div class="tot">Target: 36–39 Blueprint sales</div>
+</div></section>
+<section class="s"><div class="w">
+<div class="eb" style="color:var(--ink)">Week 1 · Nov 2–8</div>
+<h1>Baseline week</h1>
+<div class="big" style="color:var(--ink)">5–6</div>
+<div class="u">Blueprint sales</div>
+<div class="hr"></div>
+<div class="tw"><div><b style="color:var(--bp)">3–4</b><span>E-commerce + organic</span></div><div><b style="color:var(--ld)">2</b><span>Call center</span></div></div>
+<div class="hr"></div>
+<div class="rl">Rationale</div><div class="rt">Establish daily sales cadence; convert remaining Masterclass prospects. Range 3–4 reflects influencer onboarding.</div>
+<div class="cap">Cumulative spend cap <b>$10K</b></div>
+</div></section>
+<section class="s"><div class="w">
+<div class="eb" style="color:var(--bp)">Week 2 · Nov 9–15</div>
+<h1>Peak e-commerce week</h1>
+<div class="big" style="color:var(--bp)">11</div>
+<div class="u">Blueprint sales</div>
+<div class="hr"></div>
+<div class="tw"><div><b style="color:var(--bp)">8</b><span>E-commerce + organic</span></div><div><b style="color:var(--ld)">3</b><span>Call center</span></div></div>
+<div class="hr"></div>
+<div class="rl">Rationale</div><div class="rt">Driven by the Nov 14 Masterclass: pre-event demand and in-event upgrade offer. Benchmark: 4 upgrades from the previous Masterclass.</div>
+<div class="cap">Cumulative spend cap <b>$20K</b></div>
+</div></section>
+<section class="s"><div class="w">
+<div class="eb" style="color:var(--ld)">Week 3 · Nov 16–22</div>
+<h1>Peak call center week</h1>
+<div class="big" style="color:var(--ld)">11–12</div>
+<div class="u">Blueprint sales</div>
+<div class="hr"></div>
+<div class="tw"><div><b style="color:var(--bp)">6</b><span>E-commerce + organic</span></div><div><b style="color:var(--ld)">5–6</b><span>Call center</span></div></div>
+<div class="hr"></div>
+<div class="rl">Rationale</div><div class="rt">~60 new Masterclass attendees, including re-engaged no-shows, handed to sales for follow-up.</div>
+<div class="cap">Cumulative spend cap <b>$30K</b></div>
+</div></section>
+<section class="s"><div class="w">
+<div class="eb" style="color:var(--in)">Week 4 · Nov 23–30</div>
+<h1>Optimization week</h1>
+<div class="big" style="color:var(--in)">9–10</div>
+<div class="u">Blueprint sales</div>
+<div class="hr"></div>
+<div class="tw"><div><b style="color:var(--bp)">7</b><span>E-commerce + organic</span></div><div><b style="color:var(--ld)">2–3</b><span>Call center</span></div></div>
+<div class="hr"></div>
+<div class="rl">Rationale</div><div class="rt">Lower cost per sale and budget concentrated on top-performing influencers.</div>
+<div class="cap">Cumulative spend cap <b>$40K</b></div>
+</div></section>
+<section class="s"><div class="w">
+<div class="eb">How sales are generated</div>
+<h1>Growth levers</h1>
+<div class="lv">
+<div style="--c:var(--bp)"><i></i><p><b>Blueprint e-commerce</b>Paid acquisition for the $79 first-month offer.</p></div>
+<div style="--c:var(--ld)"><i></i><p><b>Lead generation</b>~25 leads per weekday at ~$13, converted by the call center.</p></div>
+<div style="--c:var(--in)"><i></i><p><b>Influencers</b>Creator partnerships driving traffic to the Blueprint.</p></div>
+<div style="--c:var(--mc)"><i></i><p><b>Masterclass, Nov 14</b>No ad spend; attendees and re-engaged no-shows routed to sales.</p></div>
+<div style="--c:var(--ink)"><i></i><p><b>Organic, weekly</b>IIBS and Rosen email campaign; historical-leads promotion and email; three new content pieces per week across social channels.</p></div>
 </div>
-<div class="xl"><div style="color:var(--bp)">Blueprint<small>$28.3K</small></div><div style="color:var(--ld)">Leads<small>$6.7K</small></div><div style="color:var(--in)">Influencers<small>$5K</small></div><div style="color:var(--mc)">Masterclass<small>$0</small></div></div>
-<div class="note">Can shift between Blueprint, leads and influencers based on performance.</div>
-<div class="sp"><div style="background:var(--bp)"><b>65%</b><span>e-commerce + organic</span></div><div style="background:var(--ld)"><b>35%</b><span>call center</span></div></div>
-<div class="note">36–39 Blueprint sales · 24–25 e-commerce + organic · 12–14 call center</div>
-</div></section>
-<section class="s"><div class="w">
-<h1>Week 1 · Nov 2–8</h1><div class="tag" style="background:var(--ink)">Setting the pace</div>
-<div class="big" style="color:var(--ink)">5–6</div><div class="lbl">Blueprint sales</div>
-<div class="ln"><div style="--c:var(--bp)"><b>3–4</b><span>e-commerce + organic</span></div><div style="--c:var(--ld)"><b>2</b><span>call center</span></div></div>
-<div class="why">We set the pace while influencers get set up; 3 is also OK. The sales team works last Masterclass sign-ups.<em>Plan assumption</em></div>
-<div class="cap">Spend so far ≤ $10K</div>
-</div></section>
-<section class="s"><div class="w">
-<h1>Week 2 · Nov 9–15</h1><div class="tag" style="background:var(--bp)">Strongest e-commerce week</div>
-<div class="big" style="color:var(--bp)">11</div><div class="lbl">Blueprint sales</div>
-<div class="ln"><div style="--c:var(--bp)"><b>8</b><span>e-commerce + organic</span></div><div style="--c:var(--ld)"><b>3</b><span>call center</span></div></div>
-<div class="why">Buzz before the Nov 14 Masterclass and sign-ups during it. The last one brought 4 e-commerce upgrades: match or beat.<em>Plan assumption</em></div>
-<div class="cap">Spend so far ≤ $20K</div>
-</div></section>
-<section class="s"><div class="w">
-<h1>Week 3 · Nov 16–22</h1><div class="tag" style="background:var(--ld)">Strongest call center week</div>
-<div class="big" style="color:var(--ld)">11–12</div><div class="lbl">Blueprint sales</div>
-<div class="ln"><div style="--c:var(--bp)"><b>6</b><span>e-commerce + organic</span></div><div style="--c:var(--ld)"><b>5–6</b><span>call center</span></div></div>
-<div class="why">~60 new Masterclass attendees (incl. paid no-shows moved to Nov 14) for the sales rep to call and close.<em>Plan assumption</em></div>
-<div class="cap">Spend so far ≤ $30K</div>
-</div></section>
-<section class="s"><div class="w">
-<h1>Week 4 · Nov 23–30</h1>
-<div class="big" style="color:var(--in)">9–10</div><div class="lbl">Blueprint sales</div>
-<div class="ln"><div style="--c:var(--bp)"><b>7</b><span>e-commerce + organic</span></div><div style="--c:var(--ld)"><b>2–3</b><span>call center</span></div></div>
-<div class="why">Lower cost per sale, the 1–2 influencers that work, and falling costs give this week upside.<em>Plan assumption</em></div>
-<div class="cap">Spend so far ≤ $40K</div>
-</div></section>
-<section class="s"><div class="w">
-<h1>The activities</h1>
-<div class="ac">
-<div style="--c:var(--bp)"><b>Blueprint e-commerce ads</b> — paid ads to the $79 first-month offer.</div>
-<div style="--c:var(--ld)"><b>Leads</b> — ~25 a weekday at ~$13; the sales rep calls and closes.</div>
-<div style="--c:var(--in)"><b>Influencers</b> — creators send followers to the Blueprint.</div>
-<div style="--c:var(--mc)"><b>Masterclass Nov 14 + no-show funnel</b> — $0 ads; attendees go to the sales rep.</div>
-<div style="--c:var(--ink)"><b>Organic, every week</b> — IIBS and Rosen email campaign · historical-leads promo + email · 3 new pieces of content a week on all social, amplified.</div>
-</div>
-<div class="note">Below pace → next week’s budget is cut and reviewed with Omri.</div>
+<div class="fn" style="text-align:left">Below-pace weeks trigger a budget reduction and review with Omri.</div>
 </div></section>
 </div>
 <button class="ar" id="pv" aria-label="Previous">‹</button><button class="ar" id="nx" aria-label="Next">›</button>
