@@ -1,437 +1,153 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>LLA · November 2026 Marketing Plan · Board</title>
-<meta name="robots" content="noindex">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LLA · November 2026 Plan · Board</title><meta name="robots" content="noindex">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#001233;--ink:#0a1628;--deep:#060e1a;--blue:#006EFF;--blue2:#338BFF;--sky:#7EC8FF;--amber:#E8A75A;--paper:#F6F8FC;--line:#E3E8F2;--mute:#5B6B85;--red:#E5484D;--green:#18A058;--grey:#A9B4C6}
+:root{--navy:#001233;--ink:#0a1628;--deep:#060e1a;--blue:#006EFF;--sky:#7EC8FF;--amber:#E8A75A;--paper:#F6F8FC;--line:#E3E8F2;--mute:#5B6B85;--red:#E5484D;--green:#18A058}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-snap-type:y mandatory;scroll-behavior:smooth}
-body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--deep);-webkit-font-smoothing:antialiased}
-.slide{min-height:100vh;scroll-snap-align:start;display:flex;align-items:center;justify-content:center;padding:56px 24px 64px;position:relative;background:var(--paper)}
-.slide.dark{background:radial-gradient(1200px 600px at 85% -10%,#0d3a8a55,transparent 60%),linear-gradient(160deg,var(--navy),var(--deep));color:#fff}
-.wrap{width:100%;max-width:1120px}
-.kicker{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
-.dark .kicker{color:var(--sky)}
-h1{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(44px,7vw,92px);line-height:1;letter-spacing:-.01em}
-h2{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(34px,4.6vw,56px);line-height:1.05;margin:10px 0 26px}
-h2 em,h1 em{font-style:italic;color:var(--blue)} .dark h1 em,.dark h2 em{color:var(--amber)}
-h3{font-size:17px;font-weight:700;margin-bottom:10px}
-p.lead{font-size:clamp(17px,1.6vw,21px);color:var(--mute);max-width:820px;line-height:1.5}
-.dark p.lead{color:#B9C6DD}
-ul.b{list-style:none;display:flex;flex-direction:column;gap:9px}
-ul.b li{position:relative;padding-left:20px;font-size:16px;line-height:1.45}
-ul.b li:before{content:"";position:absolute;left:2px;top:.6em;width:7px;height:7px;border-radius:50%;background:var(--blue)}
-.dark ul.b li:before{background:var(--amber)}
-.grid{display:grid;gap:18px}.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
-@media(max-width:860px){.g2,.g3,.g4{grid-template-columns:1fr}}
-.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px 22px 20px;box-shadow:0 1px 2px #0a16280a,0 8px 24px #0a16280d}
-.dark .card{background:#ffffff0d;border-color:#ffffff1f;box-shadow:none}
-.num{font-size:clamp(30px,3.4vw,44px);font-weight:800;letter-spacing:-.02em;line-height:1}
-.sub{font-size:14px;color:var(--mute);margin-top:6px;line-height:1.4}.dark .sub{color:#A9B8D2}
-.tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.08em;padding:3px 7px;border-radius:6px;vertical-align:middle;margin-left:6px;white-space:nowrap}
-.V{background:#E6F6EE;color:#0E7A43}.U{background:#FFF2E0;color:#9A5B0F}.E{background:#EAF1FF;color:#0050C8}.R{background:#FDECEC;color:#B4232A}
-.dark .V{background:#18A05833;color:#7DE3A8}.dark .U{background:#E8A75A33;color:#FFD39E}.dark .E{background:#338BFF33;color:#BFD9FF}
-.pnum{position:absolute;bottom:20px;right:28px;font-size:12px;color:var(--grey);font-weight:600;letter-spacing:.08em}
-.foot{position:absolute;bottom:20px;left:28px;font-size:12px;color:var(--grey)}
-.bar{height:46px;border-radius:12px;display:flex;overflow:hidden;margin:8px 0 6px;border:1px solid var(--line)}
-.bar>div{display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:13px;white-space:nowrap;overflow:hidden}
-.c-mc{background:#7A8AA6}.c-bp{background:var(--blue)}.c-ll{background:#0A9396}.c-oc{background:#C9CFDA;color:#3a4558!important}.c-in{background:var(--amber)}
-.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--mute);margin-top:8px}.legend span:before{content:"";display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;background:var(--c)}
-.row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);font-size:15px}
-.row:last-child{border-bottom:0}.row b{font-size:17px}
-.dark .row{border-color:#ffffff1a}
-.pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:14px;font-weight:600}
-.dark .pill{background:#ffffff12;border-color:#ffffff26;color:#fff}
-.big{font-family:"Instrument Serif",serif;font-size:clamp(70px,11vw,150px);line-height:.9;letter-spacing:-.02em}
-.shift{display:grid;grid-template-columns:170px 1fr;gap:10px 18px;align-items:center}
-@media(max-width:700px){.shift{grid-template-columns:1fr}}
-.shift .lab{font-weight:700;font-size:15px}.shift .lab small{display:block;font-weight:500;color:var(--mute);font-size:12.5px}
-.track{display:flex;flex-direction:column;gap:5px}
-.hb{height:22px;border-radius:6px;display:flex;align-items:center;padding:0 8px;font-size:12.5px;font-weight:700;color:#fff;min-width:fit-content;white-space:nowrap}
-.hb.o{background:#C3CBD9;color:#33405A}.hb.n{background:var(--blue)}.hb.n.am{background:var(--amber);color:#3d2a0d}
-.pillar{border-top:5px solid var(--blue)}
-.kpi{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
-.kbox{flex:1;min-width:150px;background:var(--paper);border-radius:12px;padding:12px 14px}.kbox .num{font-size:26px}
-.thr li{font-size:15px}
-.ok{color:var(--green);font-weight:800}.no{color:var(--red);font-weight:800}
-.week{border-left:4px solid var(--blue);padding:4px 0 4px 16px}
-.week .d{font-size:12px;font-weight:800;letter-spacing:.1em;color:var(--blue);text-transform:uppercase}
-.ph{border:2px dashed #9FB4D6;border-radius:18px;padding:26px;background:repeating-linear-gradient(45deg,#fff,#fff 14px,#F3F6FB 14px,#F3F6FB 28px)}
-nav.dots{position:fixed;right:14px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:7px;z-index:9}
-nav.dots a{width:8px;height:8px;border-radius:50%;background:#9AA8BF88;display:block}
-nav.dots a.on{background:var(--blue);transform:scale(1.35)}
 @media(max-width:860px){html{scroll-snap-type:none}}
-@media(max-width:700px){nav.dots{display:none}.slide{padding:44px 18px 60px}}
-.gl dt{font-weight:800;font-size:14.5px;margin-top:10px}.gl dd{font-size:14px;color:var(--mute);line-height:1.45}
-@media print{html{scroll-snap-type:none}.slide{page-break-after:always;min-height:auto}nav.dots{display:none}}
-</style>
-</head>
-<body>
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--deep);-webkit-font-smoothing:antialiased}
+.slide{min-height:100vh;scroll-snap-align:start;display:flex;align-items:center;justify-content:center;padding:48px 28px 56px;position:relative;background:var(--paper)}
+.dark{background:radial-gradient(1100px 560px at 85% -10%,#0d3a8a66,transparent 60%),linear-gradient(160deg,var(--navy),var(--deep));color:#fff}
+.wrap{width:100%;max-width:1180px}
+.k{font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--blue)}.dark .k{color:var(--sky)}
+h2{font-family:"Instrument Serif",serif;font-weight:400;font-size:clamp(36px,5vw,64px);line-height:1.02;margin:8px 0 26px}
+h2 em{font-style:italic;color:var(--blue)}.dark h2 em{color:var(--amber)}
+sup{font-size:9px;font-weight:800;color:#8A97AD;margin-left:2px;letter-spacing:.04em}.dark sup{color:#8EA0BF}
+.note{position:absolute;left:28px;right:28px;bottom:16px;font-size:11px;color:#8A97AD;line-height:1.5}
+.pn{position:absolute;top:18px;right:28px;font-size:12px;font-weight:700;color:#8A97AD;letter-spacing:.1em}
+.g{display:grid;gap:16px}.g4{grid-template-columns:repeat(4,1fr)}.g2{grid-template-columns:1.05fr 1fr}
+@media(max-width:900px){.g4{grid-template-columns:1fr 1fr}.g2{grid-template-columns:1fr}}
+@media(max-width:520px){.g4{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 8px 24px #0a16280d}
+.dark .card{background:#ffffff0e;border-color:#ffffff22;box-shadow:none}
+.big{font-size:clamp(34px,4vw,52px);font-weight:800;letter-spacing:-.03em;line-height:1}
+.pct{font-size:15px;font-weight:700;margin-top:6px}
+.lab{font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.sw{width:12px;height:12px;border-radius:3px;display:inline-block}
+.res{font-size:14.5px;color:var(--mute);margin-top:12px;line-height:1.45;border-top:1px solid var(--line);padding-top:10px}
+.res b{color:var(--ink)}.bad{color:var(--red)!important}
+.strip{display:flex;height:54px;border-radius:14px;overflow:hidden;margin:0 0 18px}
+.strip div{display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:14px;white-space:nowrap;overflow:hidden}
+.hero{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap;margin-bottom:18px}
+.hero .t{font-family:"Instrument Serif",serif;font-size:clamp(56px,8vw,104px);line-height:.9}
+.hero .s{font-size:17px;color:var(--mute)}.dark .hero .s{color:#B9C6DD}
+/* chart */
+.ch{display:grid;grid-template-columns:150px 1fr;gap:14px 16px;align-items:center}
+@media(max-width:560px){.ch{grid-template-columns:1fr;gap:6px}}
+.ch .n{font-weight:800;font-size:15px}.ch .n small{display:block;font-weight:500;font-size:12.5px;color:#A9B8D2;margin-top:2px}
+.tr{display:flex;flex-direction:column;gap:5px}
+.hb{height:26px;border-radius:7px;display:flex;align-items:center;padding:0 10px;font-size:13px;font-weight:800;white-space:nowrap;min-width:max-content}
+.o{background:#ffffff26;color:#C9D4E8}.nn{background:var(--blue);color:#fff}.am{background:var(--amber);color:#2c1d07}
+.leg{display:flex;gap:18px;font-size:12.5px;color:#A9B8D2;margin:0 0 14px}.leg i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.cap{display:flex;gap:28px;flex-wrap:wrap;margin-top:22px;padding-top:18px;border-top:1px solid #ffffff22}
+.cap .v{font-size:clamp(30px,3.4vw,44px);font-weight:800;letter-spacing:-.02em}.cap .d{font-size:13px;color:#A9B8D2;margin-top:4px}
+/* slide 3 */
+.offer{background:linear-gradient(150deg,var(--navy),#0b2a66);color:#fff;border-radius:22px;padding:28px}
+.price{font-family:"Instrument Serif",serif;font-size:clamp(80px,10vw,128px);line-height:.85;color:var(--amber)}
+.ul{list-style:none;margin-top:18px;display:flex;flex-direction:column;gap:10px}
+.ul li{padding-left:26px;position:relative;font-size:16.5px;line-height:1.35}
+.ul li:before{content:"✓";position:absolute;left:0;color:var(--amber);font-weight:800}
+.tg{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tg .card{padding:16px 18px}.tg .big{font-size:clamp(30px,3.2vw,42px)}
+.tg .d{font-size:13.5px;color:var(--mute);margin-top:6px;line-height:1.35}
+.rule{margin-top:12px;background:#fff;border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:14px;padding:14px 16px;font-size:15px;line-height:1.45}
+.ok{color:var(--green);font-weight:800}.no{color:var(--red);font-weight:800}
+@media(max-width:600px){.strip .sm{font-size:0}}
+@media(max-width:860px){.slide{flex-direction:column;padding-bottom:22px}.note{position:static;margin-top:18px}}
+</style></head><body>
 
-<!-- 1 TITLE -->
-<section class="slide dark" id="s1"><div class="wrap">
-  <div class="kicker">Longevity Life Academy · eTeacher Group · Board meeting</div>
-  <h1 style="margin:22px 0 22px">November 2026<br><em>The last-shot plan.</em></h1>
-  <p class="lead">30 sales. $30,000 revenue. A hard cap of $55,000 in ad spend. Money moves from the masterclass to the product we actually sell: the Longevity Blueprint.</p>
-  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:30px">
-    <span class="pill">Presented by Omri Gitter</span>
-    <span class="pill">Data pulled 2 Nov 2026, 13:10 Israel time</span>
-  </div>
-  <div style="margin-top:34px;font-size:13px;color:#A9B8D2;line-height:1.9">
-    How to read every number:
-    <span class="tag V">VERIFIED</span> pulled live from Meta or our CRM today
-    <span class="tag U">USER-REPORTED</span> stated by Omri / the team
-    <span class="tag E">ESTIMATE</span> a forecast or proposal, not a fact
-  </div>
-</div><div class="pnum">01</div></section>
+<!-- 1 WHERE WE ARE -->
+<section class="slide" id="s1"><div class="wrap">
+<div class="pn">1 / 3</div>
+<div class="k">Longevity Life Academy · Where we are · October 2026</div>
+<h2>$85.6K spent. <em>83% on one event.</em></h2>
+<div class="strip">
+ <div style="width:83.4%;background:#7A8AA6">Masterclass 83.4%</div>
+ <div class="sm" style="width:6.5%;background:var(--blue)">6.5</div>
+ <div class="sm" style="width:4.4%;background:#0A9396">4.4</div>
+ <div class="sm" style="width:5.7%;background:#B8C1D1;color:#33405a">5.7</div>
+</div>
+<div class="g g4">
+ <div class="card"><div class="lab"><span class="sw" style="background:#7A8AA6"></span>Masterclass</div>
+  <div class="big">$71.4K<sup>V</sup></div><div class="pct">83.4%</div>
+  <div class="res"><b>195 seats</b> at <b class="bad">$366 each</b> → $10.9K back<sup>V</sup></div></div>
+ <div class="card"><div class="lab"><span class="sw" style="background:var(--blue)"></span>Blueprint e-com</div>
+  <div class="big">$5.6K<sup>V</sup></div><div class="pct">6.5%</div>
+  <div class="res"><b class="bad">1 online sale</b> all month<sup>V</sup></div></div>
+ <div class="card"><div class="lab"><span class="sw" style="background:#0A9396"></span>LLA leads</div>
+  <div class="big">$3.8K<sup>V</sup></div><div class="pct">4.4%</div>
+  <div class="res"><b>219 leads</b> at $17 · <b class="bad">sales weak</b><sup>U</sup></div></div>
+ <div class="card"><div class="lab"><span class="sw" style="background:#B8C1D1"></span>OpenCEX leads</div>
+  <div class="big">$4.9K<sup>V</sup></div><div class="pct">5.7%<sup>E</sup></div>
+  <div class="res"><b>271 leads</b> at $18 · <b class="bad">$0 to LLA</b><sup>U</sup></div></div>
+</div>
+<p style="margin-top:20px;font-size:18px;font-weight:600">Bottom line: <span class="bad" style="font-weight:800">$0.13 back for every $1 spent</span><sup>V</sup>. The money went to the event, not the course we sell.</p>
+</div>
+<div class="note">V = VERIFIED, pulled live from Meta (act_1459085242361281, Oct 1–31) on 2 Nov, 13:10 Israel time · U = USER-REPORTED · E = ESTIMATE: no campaign is named OpenCEX; the one leads campaign is split by date (Oct 1–21 LLA, Oct 22–31 OpenCEX). Masterclass sales in the CRM are being re-verified.</div>
+</section>
 
-<!-- 2 SITUATION -->
-<section class="slide" id="s2"><div class="wrap">
-  <div class="kicker">Situation</div>
-  <h2>October did not work. <em>Here is the honest picture.</em></h2>
-  <div class="grid g3" style="margin-bottom:22px">
-    <div class="card"><div class="num">$85,643</div><div class="sub">Meta ad spend, Oct 1–31 <span class="tag V">VERIFIED</span></div></div>
-    <div class="card"><div class="num">$10,994</div><div class="sub">Revenue Meta credits to those ads (195 masterclass seats + 1 Blueprint) <span class="tag V">VERIFIED</span></div></div>
-    <div class="card"><div class="num" style="color:var(--red)">$0.13</div><div class="sub">Back for every $1 spent (ROAS, see glossary) <span class="tag V">VERIFIED</span></div></div>
-  </div>
-  <ul class="b">
-    <li><b>83% of the money went to the masterclass</b>, a $49 / $79 live Zoom event, not to the course we sell.</li>
-    <li><b>The Blueprint got 6.5%</b> and produced 1 online sale on Meta for $3,514 of its main campaign.</li>
-    <li><b>Leads were cheap ($17.65 each) but did not turn into LLA sales</b>, and from 22 Oct most of that volume fed OpenCEX, another company.</li>
-    <li><b>The board is close to closing the school.</b> November must prove one repeatable path to paying students, inside a smaller budget.</li>
-  </ul>
-</div><div class="pnum">02</div></section>
+<!-- 2 SHIFT -->
+<section class="slide dark" id="s2"><div class="wrap">
+<div class="pn">2 / 3</div>
+<div class="k">November shift · from → to</div>
+<h2>From the event <em>to the product.</em></h2>
+<div class="leg"><span><i style="background:#ffffff40"></i>October actual<sup>V</sup></span><span><i style="background:var(--blue)"></i>November plan<sup>E</sup></span></div>
+<div class="ch">
+ <div class="n">1 · Blueprint e-com<small>The main engine: online sales</small></div>
+ <div class="tr"><div class="hb o" style="width:6.5%">$5.6K · 6.5%</div><div class="hb nn" style="width:43.8%">$24.1K · 44%</div></div>
+ <div class="n">2 · Leads<small>40/weekday at $13 to our sales rep</small></div>
+ <div class="tr"><div class="hb o" style="width:10.1%">$8.6K · 10% (incl. OpenCEX)</div><div class="hb nn" style="width:19.9%">$10.9K · 20%</div></div>
+ <div class="n">3 · Masterclass<small>Julie live Nov 14, feeds the Blueprint</small></div>
+ <div class="tr"><div class="hb o" style="width:83.4%">$71.4K · 83%</div><div class="hb nn" style="width:27.3%">$15K · 27%</div></div>
+ <div class="n">4 · Influencers · new<small>70% Blueprint · 30% Masterclass</small></div>
+ <div class="tr"><div class="hb o" style="width:1%;padding:0 6px">$0</div><div class="hb am" style="width:9.1%">$5K · 9% → $3.5K / $1.5K</div></div>
+</div>
+<div class="cap">
+ <div><div class="v">$85.6K → <span style="color:var(--amber)">$55K</span></div><div class="d">Hard cap, never exceeded<sup>U</sup> · our normal July/August budget<sup>U</sup></div></div>
+ <div><div class="v">−36%</div><div class="d">less spend than October</div></div>
+ <div><div class="v">50%</div><div class="d">of November goes to the Blueprint<sup>E</sup> (incl. influencers)</div></div>
+</div>
+</div>
+<div class="note" style="color:#8EA0BF">V = VERIFIED (Meta, Oct 1–31) · U = USER-REPORTED (Omri) · E = ESTIMATE / proposal. Leads = 21 weekdays (Nov 2–30, no Sat/Sun) × 40 × $13 = $10,920. Blueprint = $55,000 − $10,920 − $15,000 − $5,000 = $24,080. Total exactly $55,000. OpenCEX lead buying ends.</div>
+</section>
 
-<!-- 3 OCTOBER SPLIT -->
+<!-- 3 OFFER + TARGETS -->
 <section class="slide" id="s3"><div class="wrap">
-  <div class="kicker">October 2026 · where the money went</div>
-  <h2>Four buckets. <em>One ate everything.</em></h2>
-  <div class="card">
-    <div style="font-size:13px;font-weight:700;color:var(--mute)">Share of $85,643 Meta spend, Oct 1–31 <span class="tag V">VERIFIED</span></div>
-    <div class="bar"><div class="c-mc" style="width:83.37%">Masterclass 83.4%</div><div class="c-bp" style="width:6.53%">6.5%</div><div class="c-ll" style="width:4.42%">4.4</div><div class="c-oc" style="width:5.68%">5.7</div></div>
-    <div class="row"><span>1 · Masterclass (Julie, campaign …203628)</span><b>$71,399.87 · 83.4%</b></div>
-    <div class="row"><span>2 · Blueprint e-commerce (…211628 $3,514.47 + older Blueprint campaign …188428 $2,080.28)</span><b>$5,594.75 · 6.5%</b></div>
-    <div class="row"><span>3 · Leads for LLA sales (leads campaign, Oct 1–21)</span><b>$3,787.73 · 4.4%</b></div>
-    <div class="row"><span>4 · OpenCEX leads (same campaign, Oct 22–31) <span class="tag E">ESTIMATE split</span></span><b>$4,860.79 · 5.7%</b></div>
-  </div>
-  <ul class="b" style="margin-top:16px">
-    <li>Omri’s estimate was ~78% on the masterclass <span class="tag U">USER-REPORTED</span>. The live number is higher: <b>83.4%</b> <span class="tag V">VERIFIED</span>.</li>
-    <li>No campaign is named OpenCEX in any of our 5 Meta ad accounts. The single LLA leads campaign tripled its volume to 20–35 leads/day from 22 Oct, matching the OpenCEX hand-off, so the split is by date <span class="tag E">ESTIMATE</span>.</li>
+<div class="pn">3 / 3</div>
+<div class="k">The offer + the targets · November 2026</div>
+<h2>Easier to say yes. <em>Measured every week.</em></h2>
+<div class="g g2">
+ <div class="offer">
+  <div class="k" style="color:var(--sky)">The Longevity Blueprint · month one</div>
+  <div style="display:flex;align-items:flex-end;gap:14px;margin-top:10px"><div class="price">$79</div><div style="font-size:16px;color:#B9C6DD;padding-bottom:10px">instead of $179<sup>V</sup><br>~56% off<sup>U</sup></div></div>
+  <ul class="ul">
+   <li>Your full Longevity Blueprint</li>
+   <li>Free VIP access to Julie live, Nov 14</li>
+   <li>$100 back toward your next course</li>
+   <li>14-day refund · no obligation</li>
   </ul>
-</div><div class="pnum">03</div></section>
-
-<!-- 4 OCTOBER RESULTS -->
-<section class="slide" id="s4"><div class="wrap">
-  <div class="kicker">October 2026 · what each bucket returned</div>
-  <h2>Results per bucket. <em>Blunt.</em></h2>
-  <div class="grid g2">
-    <div class="card"><h3>1 · Masterclass</h3>
-      <div class="row"><span>Seats sold (Meta)</span><b>195 <span class="tag V">VERIFIED</span></b></div>
-      <div class="row"><span>Cost per seat (CPA)</span><b style="color:var(--red)">$366 <span class="tag V">VERIFIED</span></b></div>
-      <div class="row"><span>Seat revenue (Meta)</span><b>$10,915 <span class="tag V">VERIFIED</span></b></div>
-      <div class="row"><span>Seats in CRM, Oct</span><b>193 · $10,687 <span class="tag U">being re-verified</span></b></div>
-    </div>
-    <div class="card"><h3>2 · Blueprint e-commerce</h3>
-      <div class="row"><span>Online sales (Meta)</span><b>1 <span class="tag V">VERIFIED</span></b></div>
-      <div class="row"><span>Cost per sale, bucket</span><b style="color:var(--red)">$5,595 <span class="tag V">VERIFIED</span></b></div>
-      <div class="row"><span>Started checkout</span><b>4 <span class="tag V">VERIFIED</span></b></div>
-      <div class="row"><span>Blueprint sales in CRM</span><b>not isolated yet <span class="tag R">GAP</span></b></div>
-    </div>
-    <div class="card"><h3>3 · Leads for LLA sales (Oct 1–21)</h3>
-      <div class="row"><span>Leads</span><b>219 · 10.4/day <span class="tag V">VERIFIED</span></b></div>
-      <div class="row"><span>Cost per lead (CPL)</span><b>$17.30 <span class="tag V">VERIFIED</span></b></div>
-      <div class="row"><span>Leads → paid students</span><b>“not good” <span class="tag U">USER-REPORTED</span></b></div>
-    </div>
-    <div class="card"><h3>4 · OpenCEX leads (Oct 22–31)</h3>
-      <div class="row"><span>Leads</span><b>271 · 27.1/day <span class="tag V">VERIFIED</span></b></div>
-      <div class="row"><span>Cost per lead (CPL)</span><b>$17.94 <span class="tag V">VERIFIED</span></b></div>
-      <div class="row"><span>Revenue to LLA</span><b>$0, another company <span class="tag U">USER-REPORTED</span></b></div>
-    </div>
+  <div style="margin-top:22px;padding-top:14px;border-top:1px solid #ffffff26;font-size:14px;color:#B9C6DD">Next classes start Mon Nov 23 and Wed Nov 25<sup>V</sup></div>
+ </div>
+ <div>
+  <div class="tg">
+   <div class="card"><div class="big" style="color:var(--blue)">30</div><div class="d">sales in November<sup>U</sup></div></div>
+   <div class="card"><div class="big" style="color:var(--blue)">$30K</div><div class="d">revenue<sup>U</sup></div></div>
+   <div class="card"><div class="big">~4<span style="font-size:.5em;color:var(--mute)">/week</span></div><div class="d">Blueprint online sales<sup>U</sup></div></div>
+   <div class="card"><div class="big">40<span style="font-size:.5em;color:var(--mute)">/weekday</span></div><div class="d">leads at $13 to our sales rep<sup>U</sup></div></div>
+   <div class="card" style="grid-column:1/-1"><div class="big" style="font-size:clamp(26px,2.6vw,34px)">Sat Nov 14 · Julie live</div><div class="d">Masterclass seats, then Blueprint upgrades in the room (20:00 Israel time)<sup>V</sup></div></div>
   </div>
-</div><div class="pnum">04</div></section>
+  <div class="rule"><b>Weekly rule:</b> <span class="ok">Scale</span> a pillar on target at ≤$1,500 per sale · <span class="no">Kill</span> it if ≤1 sale after $5K in 7 days<sup>E</sup></div>
+ </div>
+</div>
+</div>
+<div class="note">V = VERIFIED on the live checkout and masterclass page, 2 Nov · U = USER-REPORTED (Omri) · E = ESTIMATE / proposal. The new offer website will be shared by Omri.</div>
+</section>
 
-<!-- 5 GOAL -->
-<section class="slide dark" id="s5"><div class="wrap">
-  <div class="kicker">November 2026 · the goal</div>
-  <div class="grid g3" style="align-items:end;margin:18px 0 30px">
-    <div><div class="big">30</div><div class="sub">Blueprint sales <span class="tag U">USER-REPORTED</span></div></div>
-    <div><div class="big">$30K</div><div class="sub">Revenue <span class="tag U">USER-REPORTED</span></div></div>
-    <div><div class="big" style="color:var(--amber)">$55K</div><div class="sub">Hard spend cap, never exceeded. Same as our normal July/August budget <span class="tag U">USER-REPORTED</span></div></div>
-  </div>
-  <h3 style="color:#fff">Where the 30 sales come from <span class="tag E">ESTIMATE</span></h3>
-  <ul class="b">
-    <li><b>~16</b> Blueprint online sales: 4 a week × 4 weeks, end to end on the website, no sales call.</li>
-    <li><b>~10</b> sales-rep closes from leads: ~1,100 leads at ~1% close.</li>
-    <li><b>~4</b> masterclass attendees upgrading to the Blueprint after Julie’s Nov 14 session.</li>
-    <li>Budget is 36% below October ($55,000 vs $85,643 <span class="tag V">VERIFIED</span>). Spent so far, Nov 1–2 (to 13:10 Israel time): <b>$2,047</b> <span class="tag V">VERIFIED</span>.</li>
-  </ul>
-</div><div class="pnum">05</div></section>
-
-<!-- 6 SHIFT -->
-<section class="slide" id="s6"><div class="wrap">
-  <div class="kicker">Budget shift · October actual → November proposal</div>
-  <h2>From the event <em>to the product.</em></h2>
-  <div class="card">
-    <div class="shift">
-      <div class="lab">1 · Blueprint e-com<small>now pillar #1</small></div>
-      <div class="track"><div class="hb o" style="width:6.53%">Oct $5,595 · 6.5%</div><div class="hb n" style="width:47.3%">Nov $26,000 · 47.3%</div></div>
-      <div class="lab">2 · Leads (LLA)<small>OpenCEX ends</small></div>
-      <div class="track"><div class="hb o" style="width:10.1%">Oct $8,649 · 10.1% (incl. OpenCEX $4,861)</div><div class="hb n" style="width:25.5%">Nov $14,000 · 25.5%</div></div>
-      <div class="lab">3 · Masterclass<small>Nov 14 only</small></div>
-      <div class="track"><div class="hb o" style="width:83.4%">Oct $71,400 · 83.4%</div><div class="hb n" style="width:12.7%">Nov $7,000 · 12.7%</div></div>
-      <div class="lab">4 · Influencers<small>new</small></div>
-      <div class="track"><div class="hb o" style="width:2%;background:#E3E8F2;color:#6b778c">Oct $0</div><div class="hb n am" style="width:14.5%">Nov $8,000 · 14.5%</div></div>
-    </div>
-    <div class="row" style="margin-top:14px"><span><b>Total</b></span><b>Oct $85,643 <span class="tag V">VERIFIED</span> → Nov $55,000 <span class="tag E">ESTIMATE / proposal</span></b></div>
-  </div>
-  <ul class="b" style="margin-top:16px">
-    <li>Influencer money splits 70/30 <span class="tag U">USER-REPORTED</span>: $5,600 primes the Blueprint, $2,400 the masterclass. Counting it, the Blueprint gets <b>$31,600 (57.5%)</b> <span class="tag E">ESTIMATE</span>.</li>
-    <li>$4,000 of the Blueprint line is locked: released only when the scale rule on slide 12 is met.</li>
-  </ul>
-</div><div class="pnum">06</div></section>
-
-<!-- 7 PILLAR 1 -->
-<section class="slide" id="s7"><div class="wrap">
-  <div class="kicker">Pillar 1 of 4 · $26,000 <span class="tag E">ESTIMATE</span></div>
-  <h2>Refined Blueprint <em>e-commerce.</em></h2>
-  <p class="lead" style="margin-bottom:20px">“E-commerce end to end” means a stranger sees an ad, lands on the site and pays online, with no sales call.</p>
-  <div class="grid g2">
-    <div class="card pillar"><h3>Tactics</h3><ul class="b">
-      <li>Lead every ad with the new <b>$79 month-one</b> offer (slide 11).</li>
-      <li>Retarget everyone who joined or watched the masterclass (warm, cheaper buyers).</li>
-      <li>Lookalikes of past buyers: Meta finds people who resemble them.</li>
-      <li>Push the next cohort dates: Mon Nov 23 and Wed Nov 25 <span class="tag V">VERIFIED</span> on the checkout today.</li>
-      <li>Confirm purchase tracking fires before any budget goes up.</li>
-    </ul></div>
-    <div class="card"><h3>KPI and budget</h3>
-      <div class="kpi">
-        <div class="kbox"><div class="num">4/wk</div><div class="sub">online sales <span class="tag U">USER-REPORTED</span></div></div>
-        <div class="kbox"><div class="num">≤$1,500</div><div class="sub">cost per sale <span class="tag E">ESTIMATE</span></div></div>
-      </div>
-      <ul class="b" style="margin-top:14px">
-        <li>$22,000 always on + $4,000 locked for scaling <span class="tag E">ESTIMATE</span></li>
-        <li>+ $5,600 influencer priming (pillar 4)</li>
-        <li>October baseline: $3,514 per sale on the main campaign <span class="tag V">VERIFIED</span></li>
-      </ul>
-    </div>
-  </div>
-</div><div class="pnum">07</div></section>
-
-<!-- 8 PILLAR 2 -->
-<section class="slide" id="s8"><div class="wrap">
-  <div class="kicker">Pillar 2 of 4 · $14,000 <span class="tag E">ESTIMATE</span></div>
-  <h2>Leads for <em>our own sales rep.</em></h2>
-  <p class="lead" style="margin-bottom:20px">A “lead” is a person who leaves name, email and phone in a Meta form. Our sales rep calls them and sells the Blueprint.</p>
-  <div class="grid g2">
-    <div class="card pillar" style="border-top-color:#0A9396"><h3>Tactics</h3><ul class="b">
-      <li>End the OpenCEX hand-off. Every lead goes to the LLA sales rep.</li>
-      <li>Rep finishes the upgrade cycle of current sign-ups this week <span class="tag U">USER-REPORTED</span>.</li>
-      <li>Call every new lead the same day, using the $79 offer as the close.</li>
-      <li>Daily report: leads, calls, sales. Cut ads that bring unreachable leads.</li>
-    </ul></div>
-    <div class="card"><h3>KPI and budget</h3>
-      <div class="kpi">
-        <div class="kbox"><div class="num">40/day</div><div class="sub">leads <span class="tag U">USER-REPORTED</span></div></div>
-        <div class="kbox"><div class="num">≤$12.50</div><div class="sub">cost per lead needed <span class="tag E">ESTIMATE</span></div></div>
-      </div>
-      <ul class="b" style="margin-top:14px">
-        <li><b>Honest gap:</b> at October’s $17.65 per lead <span class="tag V">VERIFIED</span>, $14,000 buys ~790 leads ≈ 28/day <span class="tag E">ESTIMATE</span>.</li>
-        <li>40/day inside the cap needs the cost per lead to fall ~29%, or reserve money moved here.</li>
-      </ul>
-    </div>
-  </div>
-</div><div class="pnum">08</div></section>
-
-<!-- 9 PILLAR 3 -->
-<section class="slide" id="s9"><div class="wrap">
-  <div class="kicker">Pillar 3 of 4 · $7,000 <span class="tag E">ESTIMATE</span></div>
-  <h2>Masterclass, <em>Nov 14 only.</em></h2>
-  <p class="lead" style="margin-bottom:20px">Julie Gibson Clark live on Zoom, Sat Nov 14, 1:00 PM ET = 20:00 Israel time. Standard $49, VIP $79 <span class="tag V">VERIFIED</span> on the live page today.</p>
-  <div class="grid g2">
-    <div class="card pillar" style="border-top-color:#7A8AA6"><h3>Tactics</h3><ul class="b">
-      <li>Spend only until Nov 14. No masterclass ads after the event.</li>
-      <li>Retargeting and lookalikes of October buyers only, no cold broad audiences.</li>
-      <li>The event is a sales room: Blueprint offer and coupon shown live by Julie’s team.</li>
-      <li>Every Blueprint buyer gets the VIP seat free, so the event also sells the course.</li>
-    </ul></div>
-    <div class="card"><h3>KPI and budget</h3>
-      <div class="kpi">
-        <div class="kbox"><div class="num">≤$100</div><div class="sub">cost per seat (Oct $366) <span class="tag E">ESTIMATE</span></div></div>
-        <div class="kbox"><div class="num">~4</div><div class="sub">Blueprint upgrades <span class="tag E">ESTIMATE</span></div></div>
-      </div>
-      <ul class="b" style="margin-top:14px">
-        <li>Nov 14 seats already sold: 36 (25 Standard, 11 VIP) as of 29 Oct <span class="tag U">being re-verified</span></li>
-        <li>+ $2,400 influencer support (pillar 4)</li>
-      </ul>
-    </div>
-  </div>
-</div><div class="pnum">09</div></section>
-
-<!-- 10 PILLAR 4 -->
-<section class="slide" id="s10"><div class="wrap">
-  <div class="kicker">Pillar 4 of 4 · $8,000 · new <span class="tag E">ESTIMATE</span></div>
-  <h2>Influencers <em>prime the buyer.</em></h2>
-  <p class="lead" style="margin-bottom:20px">“Priming” means trusted creators warm people up, so our Blueprint ads land on people who already know and trust the offer.</p>
-  <div class="grid g2">
-    <div class="card pillar" style="border-top-color:var(--amber)"><h3>Tactics</h3><ul class="b">
-      <li>3–6 small longevity and 50+ health creators, paid per post, not big celebrities.</li>
-      <li>Run their posts as Meta “partnership ads”: our ads, shown from the creator’s own account.</li>
-      <li>Each creator gets a personal code, so every sale is traced to them.</li>
-      <li>Everyone who watches is retargeted with the $79 Blueprint offer.</li>
-    </ul></div>
-    <div class="card"><h3>Split and KPI</h3>
-      <div class="bar" style="height:40px"><div class="c-bp" style="width:70%">Blueprint 70% · $5,600</div><div class="c-mc" style="width:30%">MC 30% · $2,400</div></div>
-      <div class="sub" style="margin-bottom:12px">70/30 split <span class="tag U">USER-REPORTED</span> · $ amounts <span class="tag E">ESTIMATE</span></div>
-      <ul class="b">
-        <li>Sales per creator code, tracked weekly.</li>
-        <li>Drop a creator with no sale after 7 days live.</li>
-        <li>First posts live by week 2, or the money returns to pillar 1.</li>
-      </ul>
-    </div>
-  </div>
-</div><div class="pnum">10</div></section>
-
-<!-- 11 OFFER -->
-<section class="slide dark" id="s11"><div class="wrap">
-  <div class="kicker">Offer refinement</div>
-  <h2>Easier to say yes: <em>$79 to start.</em></h2>
-  <div class="grid g2">
-    <div class="card"><h3 style="color:#fff">The new offer <span class="tag U">USER-REPORTED</span></h3><ul class="b">
-      <li><b>Month one $79</b>, ~56% off the $179 monthly price <span class="tag V">VERIFIED</span> on today’s checkout.</li>
-      <li>No obligation. 14-day refund, as always.</li>
-      <li>Full Longevity Blueprint: 18 live sessions and your personal protocol.</li>
-      <li>Free VIP access to Julie’s Nov 14 masterclass.</li>
-      <li>$100 back toward the next course.</li>
-      <li>Plus every normal benefit of the course.</li>
-    </ul></div>
-    <div class="ph" style="border-color:#ffffff40;background:repeating-linear-gradient(45deg,#ffffff08,#ffffff08 14px,#ffffff12 14px,#ffffff12 28px)">
-      <div class="kicker">Placeholder</div>
-      <h3 style="color:#fff;font-size:24px;margin:10px 0 12px;font-family:'Instrument Serif',serif;font-weight:400">New offer: website (Omri to provide)</h3>
-      <ul class="b">
-        <li>Headline: $79 for month one</li>
-        <li>Bundle: Blueprint + Julie VIP Nov 14 + $100 credit</li>
-        <li>Risk-free: no obligation, 14-day refund</li>
-        <li>One button: Start for $79</li>
-      </ul>
-    </div>
-  </div>
-  <p class="lead" style="margin-top:18px;font-size:15px">Why it matters: October showed people pay $49–$79 easily (193 masterclass seats in October, <span class="tag U">being re-verified</span>) but not $179 a month cold. The offer meets them at the price they already said yes to.</p>
-</div><div class="pnum">11</div></section>
-
-<!-- 12 SCORECARD -->
-<section class="slide" id="s12"><div class="wrap">
-  <div class="kicker">Weekly scorecard · reviewed every Sunday</div>
-  <h2>Scale what works. <em>Kill what doesn’t.</em></h2>
-  <p class="lead" style="margin-bottom:18px;font-size:16px">All thresholds below are <span class="tag E">ESTIMATE</span> proposals. “Rolling 7 days” = the last 7 days at any moment.</p>
-  <div class="grid g2">
-    <div class="card"><h3>Blueprint e-com</h3><ul class="b thr">
-      <li>Target: 4 sales a week.</li>
-      <li><span class="ok">Scale</span> ≥4 sales and ≤$1,500 per sale (rolling 7 days) → release $1,000 of the locked $4,000.</li>
-      <li><span class="no">Kill</span> ≤1 sale after $5,000 spent (rolling 7 days) → cut that audience, move money to leads.</li>
-    </ul></div>
-    <div class="card"><h3>Leads</h3><ul class="b thr">
-      <li>Target: 40 a day at ≤$12.50.</li>
-      <li><span class="ok">Scale</span> ≤$12.50 per lead for 3 days and the rep reaches ≥60% of leads.</li>
-      <li><span class="no">Kill</span> >$20 per lead for 3 days, or 0 sales from the first 300 leads.</li>
-    </ul></div>
-    <div class="card"><h3>Masterclass</h3><ul class="b thr">
-      <li>Target: ≤$100 per seat, then Blueprint upgrades.</li>
-      <li><span class="no">Kill</span> >$150 per seat after $2,000 spent → email and WhatsApp only.</li>
-      <li><span class="no">Stop</span> all masterclass ads on Nov 14.</li>
-    </ul></div>
-    <div class="card"><h3>Influencers + cap</h3><ul class="b thr">
-      <li><span class="no">Kill</span> a creator with 0 sales after 7 days.</li>
-      <li><b>Cap guard:</b> ≤$1,833 a day on average ($55,000 ÷ 30), checked daily against $55,000.</li>
-      <li>Every count matched Meta vs CRM before it is reported.</li>
-    </ul></div>
-  </div>
-</div><div class="pnum">12</div></section>
-
-<!-- 13 TIMELINE -->
-<section class="slide" id="s13"><div class="wrap">
-  <div class="kicker">Timeline · Israel time</div>
-  <h2>Four weeks, <em>two decision gates.</em></h2>
-  <div class="grid g4">
-    <div class="week"><div class="d">Week 1 · Nov 2–8</div><ul class="b" style="margin-top:8px">
-      <li>$79 offer page live, tracking checked</li><li>OpenCEX hand-off ends; leads to our rep</li><li>Rep finishes upgrade cycle</li><li>Creators signed</li></ul></div>
-    <div class="week"><div class="d">Week 2 · Nov 9–15</div><ul class="b" style="margin-top:8px">
-      <li>Masterclass push</li><li><b>Sat Nov 14, 20:00</b> Julie live</li><li>Live Blueprint offer in the room</li><li>First creator posts</li><li><b>Gate 1, Nov 15</b></li></ul></div>
-    <div class="week"><div class="d">Week 3 · Nov 16–22</div><ul class="b" style="margin-top:8px">
-      <li>Masterclass ads off</li><li>All budget on Blueprint + leads</li><li>Retarget Nov 14 attendees</li><li>Release locked $ if scale rule met</li></ul></div>
-    <div class="week"><div class="d">Week 4 · Nov 23–30</div><ul class="b" style="margin-top:8px">
-      <li>Cohorts start Nov 23 / 25</li><li>Black Friday Nov 27: last-call offer</li><li>Stop at $55,000</li><li><b>Gate 2, Nov 30</b></li></ul></div>
-  </div>
-  <p class="lead" style="margin-top:22px;font-size:15px">Gate = a board check: on target, scale; under target, cut to the pillar that works.</p>
-</div><div class="pnum">13</div></section>
-
-<!-- 14 RISKS -->
-<section class="slide" id="s14"><div class="wrap">
-  <div class="kicker">Risks and mitigations</div>
-  <h2>What can break, <em>and our answer.</em></h2>
-  <div class="grid g2">
-    <div class="card"><div class="row"><span><b>$79 starters refund or leave after month one</b></span></div><ul class="b" style="margin-top:8px"><li>Julie VIP and $100 credit reward staying; rep calls every starter in week 2.</li></ul></div>
-    <div class="card"><div class="row"><span><b>$30K needs ~$1,000 per sale; the plan is ~$795</b> <span class="tag E">ESTIMATE</span></span></div><ul class="b" style="margin-top:8px"><li>$79 + 4 × $179 = $795. Finance to confirm how a “sale” is counted; push one-payment option.</li></ul></div>
-    <div class="card"><div class="row"><span><b>One sales rep for ~1,100 leads</b></span></div><ul class="b" style="margin-top:8px"><li>Same-day calls, WhatsApp follow-ups, weekly close-rate check; add help if close rate holds.</li></ul></div>
-    <div class="card"><div class="row"><span><b>Ad costs rise around Black Friday (Nov 27)</b></span></div><ul class="b" style="margin-top:8px"><li>Spend weighted to weeks 1–3; daily cap guard.</li></ul></div>
-    <div class="card"><div class="row"><span><b>Influencers start late</b></span></div><ul class="b" style="margin-top:8px"><li>If not live by Nov 15, the money returns to pillar 1.</li></ul></div>
-    <div class="card"><div class="row"><span><b>Meta and CRM counts disagree</b></span></div><ul class="b" style="margin-top:8px"><li>Only CRM-matched sales are reported to the board.</li></ul></div>
-  </div>
-</div><div class="pnum">14</div></section>
-
-<!-- 15 ASK -->
-<section class="slide dark" id="s15"><div class="wrap">
-  <div class="kicker">The ask of the board</div>
-  <h2>One month. $55,000. <em>Clear gates.</em></h2>
-  <ul class="b" style="gap:16px">
-    <li style="font-size:19px"><b>Approve the $55,000 November cap</b>, our normal July/August budget, not a cent more.</li>
-    <li style="font-size:19px"><b>Approve the $79 month-one offer</b> with the $100 credit and Julie VIP.</li>
-    <li style="font-size:19px"><b>Sales: commit the rep</b> to same-day calls and a daily lead-to-sale report.</li>
-    <li style="font-size:19px"><b>Finance: define a “sale”</b> and its $ value for the $30,000 goal.</li>
-    <li style="font-size:19px"><b>Judge us on the gates</b>: Nov 15 and Nov 30, against 30 sales.</li>
-  </ul>
-</div><div class="pnum">15</div></section>
-
-<!-- 16 GLOSSARY + SOURCES -->
-<section class="slide" id="s16"><div class="wrap">
-  <div class="kicker">Appendix · terms, sources, open data</div>
-  <h2>Every term, <em>every source.</em></h2>
-  <div class="grid g3">
-    <div class="card"><h3>Glossary</h3><dl class="gl">
-      <dt>CPA</dt><dd>Cost per acquisition: ad spend ÷ sales.</dd>
-      <dt>CPL</dt><dd>Cost per lead: ad spend ÷ leads.</dd>
-      <dt>ROAS</dt><dd>Return on ad spend: revenue ÷ spend.</dd>
-      <dt>Retargeting</dt><dd>Showing ads again to people who already visited or engaged.</dd>
-      <dt>Lookalike</dt><dd>A Meta audience of people similar to our buyers.</dd>
-      <dt>Meta-attributed</dt><dd>Sales Meta credits to its ads via the tracking pixel.</dd>
-      <dt>CRM</dt><dd>eTeacher’s customer system (ActiveCampaign), where paid orders are recorded.</dd>
-      <dt>OpenCEX</dt><dd>The other company that received leads from 22 Oct.</dd>
-    </dl></div>
-    <div class="card"><h3>Sources</h3><ul class="b" style="font-size:14px">
-      <li>Meta Marketing API, ad account act_1459085242361281, Oct 1–31 2026 by campaign, pulled 2 Nov 13:10 Israel time.</li>
-      <li>Masterclass campaign 52668266203628; Blueprint 52663511211628 + 52658911188428; leads 52655032034228.</li>
-      <li>Prices: longevitylifeacademy.com/julie-masterclass and the Blueprint checkout, read 2 Nov.</li>
-      <li>CRM masterclass counts: snapshot 29 Oct 15:09 Israel time.</li>
-    </ul></div>
-    <div class="card"><h3>Open data</h3><ul class="b" style="font-size:14px">
-      <li>No campaign named OpenCEX exists; the Oct 22 date split needs Omri’s confirmation.</li>
-      <li>October Blueprint sales in the CRM are not yet isolated from eTeacher-wide orders.</li>
-      <li>Leads → sales from the rep: no count yet.</li>
-      <li>Masterclass seat counts are being re-verified.</li>
-    </ul></div>
-  </div>
-</div><div class="pnum">16</div></section>
-
-<nav class="dots" id="dots"></nav>
 <script>
-const S=[...document.querySelectorAll('.slide')],D=document.getElementById('dots');
-S.forEach((s,i)=>{const a=document.createElement('a');a.href='#'+s.id;a.title='Slide '+(i+1);D.appendChild(a)});
-const A=[...D.children];
-const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){const i=S.indexOf(x.target);A.forEach((a,j)=>a.classList.toggle('on',i===j))}}),{threshold:.55});S.forEach(s=>io.observe(s));
+const S=[...document.querySelectorAll('.slide')];
 function cur(){let b=0,m=1e9;S.forEach((s,i)=>{const d=Math.abs(s.getBoundingClientRect().top);if(d<m){m=d;b=i}});return b}
 addEventListener('keydown',e=>{let i=cur();if(['ArrowDown','ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();S[Math.min(i+1,S.length-1)].scrollIntoView()}if(['ArrowUp','ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();S[Math.max(i-1,0)].scrollIntoView()}});
 </script>
